@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2883F09A-D87B-4F02-80DC-1242CF3C5172}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>đồ_án_ctdl_gt</RootNamespace>
+    <AssemblyName>đồ án ctdl&amp;gt</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="BinarySearchTree.cs" />
+    <Compile Include="Chitiethoso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chitiethoso.Designer.cs">
+      <DependentUpon>Chitiethoso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chitietTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chitietTK.Designer.cs">
+      <DependentUpon>chitietTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs" />
+    <Compile Include="Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.Designer.cs">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGenerator.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Node.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanlyGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanlyGD.Designer.cs">
+      <DependentUpon>QuanlyGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sort.Designer.cs">
+      <DependentUpon>Sort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SortAlgorithms.cs" />
+    <Compile Include="SortResult.cs" />
+    <Compile Include="TaoTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoTK.Designer.cs">
+      <DependentUpon>TaoTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timing class.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="Userstore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chitiethoso.resx">
+      <DependentUpon>Chitiethoso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chitietTK.resx">
+      <DependentUpon>chitietTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangnhap.resx">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanlyGD.resx">
+      <DependentUpon>QuanlyGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sort.resx">
+      <DependentUpon>Sort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoTK.resx">
+      <DependentUpon>TaoTK.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z7679769722370_92faf4f4ee705e9782d6bdf24431d313.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z7679714862167_dcbc4e3962bcf7573b099fbfa352d9ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z7680006328814_c8cdf8d6d3adc0d47cd905c1da20a517.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
