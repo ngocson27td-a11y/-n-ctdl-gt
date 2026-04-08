@@ -33,10 +33,11 @@ namespace đồ_án_ctdl_gt
             transactions.Add(new Transaction("GD00006", "IT0006", new DateTime(2026, 04, 09, 12, 15, 10), " Chuyển tiền", 100000));
             transactions.Add(new Transaction("GD00007", "IT0004", new DateTime(2026, 08, 10, 09, 47, 5), " Nhận tiền", 250000));
             transactions.Add(new Transaction("GD00008", "IT0005", new DateTime(2026, 02, 23, 10, 27, 31), " Nhận tiền", 600000));
-            transactions.Add(new Transaction("GD00005", "IT0007", new DateTime(2026, 05, 17, 08, 19, 22), " Chuyển tiền", 90000));
+            transactions.Add(new Transaction("GD00005", "IT0007", new DateTime(2026, 05, 17, 08, 19, 22), " Nhận tiền", 90000));
             transactions.Add(new Transaction("GD00006", "IT0002", new DateTime(2026, 11, 05, 12, 15, 10), " Chuyển tiền", 100000));
             transactions.Add(new Transaction("GD00007", "IT0008", new DateTime(2026, 09, 09, 09, 47, 5), " Nhận tiền", 300000));
             transactions.Add(new Transaction("GD00008", "IT0001", new DateTime(2026, 07, 01, 10, 27, 31), " Nhận tiền", 200000));
+            transactions.Add(new Transaction("GD00009", "IT0002", new DateTime(2026, 11, 05, 12, 15, 10), " Nhận tiền", 800000));
             return transactions;
         }
 

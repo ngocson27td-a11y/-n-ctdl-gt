@@ -25,7 +25,6 @@ namespace đồ_án_ctdl_gt
         public Chitiethoso()
         {
             InitializeComponent();
-            LoadDataToGrid();
             LoadDummyData(); // Gọi hàm nạp dữ liệu mẫu
             // Thêm các lựa chọn vào ComboBox
             cbSearchType.Items.Add("Số Tài khoản");
@@ -55,32 +54,16 @@ namespace đồ_án_ctdl_gt
             myBST = new BinarySearchTree();
             foreach (var acc in allAccounts) myBST.Insert(acc);
             dgvData.DataSource = allAccounts;
-           
-        }
-        void LoadDataToGrid()
-        {
-            List<Account> list = new List<Account>
-        {
-            new Account { AccountID = "IT00001", AccountName = "Nguyễn Ngọc Sơn", Balance = 600000, TransactionNum = 3, AccountDate = new DateTime(2026, 4, 27, 12, 16, 0) },
-            new Account { AccountID = "IT00002", AccountName = "Mai Đinh Thế Anh", Balance = 375000, TransactionNum= 2, AccountDate= new DateTime(2026, 1, 30, 10, 17, 0) },
-            new Account { AccountID = "IT00003", AccountName = "Nguyễn Lê Minh Nghĩa", Balance = 670000, TransactionNum = 2, AccountDate = new DateTime(2026, 1, 22, 8, 18, 0) },
-            new Account { AccountID = "IT00004", AccountName = "Nguyễn Chí Kiệt", Balance = 200000, TransactionNum = 1, AccountDate = new DateTime(2026, 12, 1, 10, 27, 0) },
-            new Account { AccountID = "IT00005", AccountName = "Huỳnh Châu Gia Hưng", Balance = 400000, TransactionNum = 2, AccountDate = new DateTime(2026, 3, 25, 12, 15, 0) },
-            new Account { AccountID = "IT00006", AccountName = "Lê Đỗ Anh Khoa", Balance = 700000, TransactionNum= 3, AccountDate= new DateTime(2026, 5, 29, 9, 24, 0) },
-            new Account { AccountID = "IT00007", AccountName = "Nguyễn ThiPhương Thảo", Balance = 150000, TransactionNum = 2, AccountDate = new DateTime(2026, 7, 21, 8, 12, 0) },
-            new Account { AccountID = "IT00008", AccountName = "Nguyễn Nữ My Na", Balance = 300000, TransactionNum = 1, AccountDate = new DateTime(2026, 1, 18, 11, 20, 0) }
-        };
-            // Gán danh sách này vào DataGridView
-            dgvData.DataSource = list;
+
             //  Đổi tên cột hiển thị (Tiếng Việt)
             dgvData.Columns["AccountID"].HeaderText = "Số Tài khoản";
             dgvData.Columns["AccountName"].HeaderText = "Tên Tài khoản";
             dgvData.Columns["Balance"].HeaderText = "Số dư";
             dgvData.Columns["TransactionNum"].HeaderText = "Số giao dịch";
             dgvData.Columns["AccountDate"].HeaderText = "Ngày lập Tài khoản";
+
         }
-
-
+       
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Lấy mục đang chọn
